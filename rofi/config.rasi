@@ -1,0 +1,113 @@
+configuration {
+    modes: "drun";
+	//show-icons: true;
+	cycle: true;
+	scroll-method: 1;
+    steal-focus: true;
+	matching: "fuzzy";
+	// drun-display-format: "{name} [<span weight='light' size='small'>{generic}</span>]";
+	drun-display-format: "{name}";
+	 display-drun: "";
+	// display-drun: "_>";
+	fixed-num-lines: true;
+	eh: 1; // row height
+	dpi: 0;
+
+/*	icon-theme: ;*/
+/*	font: "mono 12";*/
+/*	yoffset: 0;*/
+/*	xoffset: 0;*/
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@import "color"
+
+window {
+	width: 20em;
+	spacing: 0;
+	transparency: "real";
+	background-color: @bg;
+	border: 10;
+	border-color: @bg;
+}
+
+inputbar {
+	background-color: @bg;
+	text-color: @fg;
+	border-color: @bg2;
+	children: [entry];
+	border: 0;
+}
+
+prompt {
+	background-color: @bg;
+	text-color: @fg;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border: 0;
+}
+
+entry {
+	background-color: @bg;
+	text-color: @fg;
+	placeholder: "";
+	padding: 0.5em 0 0.5em 0;
+	border: 0;
+}
+
+listview {
+	background-color: @bg;
+	dynamic: true;
+	padding: 0 0 0 0;
+	border: 0;
+	lines: 10;
+	columns: 1;
+	children: [element];
+}
+
+scrollbar {
+	handle-width: 0;
+}
+
+mainbox {
+	background-color: @bg;
+	border: 0;
+}
+
+element {
+	background-color: @bg;
+	text-color: @fg;
+	padding: 0px;
+	border: 0;
+}
+
+element selected {
+	background-color: @bg2;
+	text-color: @fg;
+	border: 0;
+}
+
+element-text {
+	background-color: @bg;
+	text-color: @fg;
+	border: 0;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+element-icon {
+	background-color: @bg;
+}
+
+element-text selected {
+	background-color: @bg2;
+	text-color: @fg;
+	border: 0;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
