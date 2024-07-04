@@ -1,14 +1,14 @@
 * {
-	bg: 	#2e3440;
+	bg: 	#1d2021;
 	bg1: 	#373d41;
 	bg2: 	#474f54;
-	red: 	#ea5252;
-	green: 	#ACB765;
+	red: 	#ea6962;
+	green: 	#a9b665;
 	yellow: #c1bf89;
 	blue: 	#82abbc;
-	magenta:#b18a97;
+	magenta:#d3869b;
 	cyan: 	#89b482;
-	fg: 	#88c0d0;
+	fg: 	#d4be98;
 	fg1: 	#d8caac;
 	fg2: 	#b3cfa7;
 

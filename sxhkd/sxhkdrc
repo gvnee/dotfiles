@@ -5,13 +5,17 @@
 # terminal emulator
 super + Return
 	alacritty
+
 # program launcher
-super + @space
+super + r
 	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+super + {e, v, z, b}
+	{thunar, code, zathura, firefox}
 
 #
 # bspwm hotkeys
@@ -119,7 +123,6 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# audio
 XF86AudioRaiseVolume
 	amixer set Master 5%+
 XF86AudioLowerVolume
@@ -127,6 +130,8 @@ XF86AudioLowerVolume
 XF86AudioMute
 	amixer set Master {mute, unmute}
 
-#brightness
 XF86MonBrightness{Up,Down}  
   brightnessctl s 100{+,-}
+
+@Print
+	scrot -s --line mode=edge ~/pictures/ss/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
