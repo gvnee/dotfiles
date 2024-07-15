@@ -22,4 +22,4 @@ vim.opt.backup = false
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
+opts.rocks.hererocks = false
