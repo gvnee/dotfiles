@@ -1,2 +1,2 @@
-require("config")
 require("setup-vim")
+require("config")

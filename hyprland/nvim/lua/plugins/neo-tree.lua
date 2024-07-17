@@ -6,7 +6,17 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 	},
-	config = function()
-		vim.keymap.set('n', '<Tab>', ':Neotree filesystem reveal right<CR>', {})
-	end
+	cmd = "Neotree",
+	keys = {
+		{ "<Tab>", ":Neotree reveal right<CR>", {}},
+	},
+	opts = {
+		filesystem = {
+			window = {
+				mappings = {
+					["<Tab>"] = "close_window",
+				},
+			},
+		},
+	},
 }
