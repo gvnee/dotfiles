@@ -80,19 +80,19 @@ color = "#f5e0dc"
 size = 14
 
 [font.bold]
-family = "Iosevka Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Iosevka Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "Iosevka Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "Iosevka Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
 [scrolling]

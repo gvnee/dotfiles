@@ -14,12 +14,16 @@ vim.opt.wrap = false
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 10
+vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-opts.rocks.hererocks = false
