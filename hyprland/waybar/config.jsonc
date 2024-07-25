@@ -20,7 +20,8 @@
       "battery",
       "battery#bat2",
       "clock",
-      "tray"
+      "tray",
+			"custom/notification",
   ],
 
 //   Modules configuration
@@ -101,7 +102,7 @@
   "network": {
       // "interface": "wlp2*", // (Optional) To force the use of this interface
       "format-wifi": "{essid} ({signalStrength}%) ",
-      "format-ethernet": "{ipaddr}/{cidr} ",
+      // "format-ethernet": "{ipaddr}/{cidr} ",
       "tooltip-format": "{ifname} via {gwaddr} ",
       "format-linked": "{ifname} (No IP) ",
       "format-disconnected": "Disconnected ⚠",
@@ -109,12 +110,12 @@
   },
   "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
-      "format": "{volume}% {icon} {format_source}",
+      "format": "{volume}% {icon}",
       "format-bluetooth": "{volume}% {icon} {format_source}",
       "format-bluetooth-muted": " {icon} {format_source}",
       "format-muted": " {format_source}",
-      "format-source": "{volume}% ",
-      "format-source-muted": "",
+      // "format-source": "{volume}% ",
+      // "format-source-muted": "",
       "format-icons": {
           "headphone": "",
           "hands-free": "",
@@ -137,5 +138,22 @@
       "escape": true,
       "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
       // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-  }
+  },
+	"custom/notification": {
+			"tooltip": true,
+			"format": "<span font-size='large'>{icon}</span>",
+			"format-icons": {
+				"notification": "",
+				"none": "",
+				"dnd-notification": "",
+				"dnd-none": "",
+			},
+			"return-type": "json",
+			"exec-if": "which swaync-client",
+			"exec": "swaync-client -swb",
+			"on-click": "swaync-client -t -sw",
+			"on-click-middle": "swaync-client -C",
+			"on-click-right": "swaync-client -d -sw",
+			"escape": true,
+		},	
 }
