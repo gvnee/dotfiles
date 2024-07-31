@@ -16,3 +16,5 @@ vim.keymap.set("n", "<A-.>", "<cmd>BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<A-c>", "<cmd>BufferLineClose<CR>")
 
 vim.keymap.set("x", "<leader>p", '"_dP')
+
+vim.keymap.set("n", "<leader>w", "<cmd>bd<CR>")
