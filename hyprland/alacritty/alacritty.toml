@@ -116,3 +116,7 @@ instance = "Alacritty"
 [window.padding]
 #x = 16
 #y = 16
+
+[terminal.shell]
+args = ["--cd ~"]
+program = 'C:\Windows\System32\wsl.exe'
