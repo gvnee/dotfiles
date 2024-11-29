@@ -1,8 +1,11 @@
-return {
+return
+{
 	"ellisonleao/gruvbox.nvim",
 	priority = 1000,
-	opts = { bold = false },
 	config = function()
+		require("gruvbox").setup({
+			bold = false
+		})
 		vim.cmd.colorscheme("gruvbox")
 	end
 }
