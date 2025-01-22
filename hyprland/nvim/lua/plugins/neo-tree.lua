@@ -8,13 +8,13 @@ return {
 	},
 	cmd = "Neotree",
 	keys = {
-		{ "<Tab>", ":Neotree reveal right<CR>", {}},
+		{ "<F2>", ":Neotree reveal right<CR>", {} },
 	},
 	opts = {
 		filesystem = {
 			window = {
 				mappings = {
-					["<Tab>"] = "close_window",
+					["<F2>"] = "close_window",
 				},
 			},
 		},

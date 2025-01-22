@@ -1,3 +1,3 @@
 require("setup-vim")
 require("config")
-require("bufferline").setup({})
+-- require("bufferline").setup({})
